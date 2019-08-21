@@ -4,14 +4,16 @@ using AtividadeBlog.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AtividadeBlog.Migrations
 {
     [DbContext(typeof(AtividadeBlogContext))]
-    partial class BlogContextModelSnapshot : ModelSnapshot
+    [Migration("20190819184040_atualizacao")]
+    partial class atualizacao
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

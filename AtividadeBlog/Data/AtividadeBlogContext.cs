@@ -10,5 +10,7 @@ namespace AtividadeBlog.Models
         }
 
         public DbSet<Categoria> Categoria { get; set; }
+        public DbSet<Mensagem> Mensagem { get; set; }
+        public DbSet<Comentario> Comentario { get; set; }
     }
 }
